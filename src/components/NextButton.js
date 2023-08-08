@@ -30,7 +30,7 @@ const NextButton = ({ percentage, scrollTo }) => {
             (animationValue) => {
                 const strokeDashoffset =
                     circumference -
-                    (circumference * animationValue.value) / 100;
+                    (circumference * animationValue.value) / 64 / 100;
                 if (progressRef?.current) {
                     progressRef.current.setNativeProps({
                         strokeDashoffset,
