@@ -27,25 +27,25 @@ export default [
             'Slowly connect to a remote server and connect to a remote server using the provided credentials',
         image: require('../assets/frame2.jpeg'),
     },
-    {
-        id: '5',
-        title: 'Quickly connect',
-        description:
-            'Quickly connect to a remote server and connect to a remote server using the provided credentials',
-        image: require('../assets/frame1.jpg'),
-    },
-    {
-        id: '6',
-        title: 'Slowly connect',
-        description:
-            'Slowly connect to a remote server and connect to a remote server using the provided credentials',
-        image: require('../assets/frame2.jpeg'),
-    },
-    {
-        id: '7',
-        title: 'Quickly connect',
-        description:
-            'Quickly connect to a remote server and connect to a remote server using the provided credentials',
-        image: require('../assets/frame1.jpg'),
-    },
+    // {
+    //     id: '5',
+    //     title: 'Quickly connect',
+    //     description:
+    //         'Quickly connect to a remote server and connect to a remote server using the provided credentials',
+    //     image: require('../assets/frame1.jpg'),
+    // },
+    // {
+    //     id: '6',
+    //     title: 'Slowly connect',
+    //     description:
+    //         'Slowly connect to a remote server and connect to a remote server using the provided credentials',
+    //     image: require('../assets/frame2.jpeg'),
+    // },
+    // {
+    //     id: '7',
+    //     title: 'Quickly connect',
+    //     description:
+    //         'Quickly connect to a remote server and connect to a remote server using the provided credentials',
+    //     image: require('../assets/frame1.jpg'),
+    // },
 ];

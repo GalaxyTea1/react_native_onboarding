@@ -8,7 +8,7 @@ const NextButton = ({ percentage, scrollTo }) => {
     const strokeWidth = 2;
     const center = size / 2;
     const radius = size / 2 - strokeWidth / 2;
-    const circumference = size * Math.PI * radius;
+    const circumference = 2 * Math.PI * radius;
     const colorWhite = '#E6E7E8';
     const colorPink = '#5e02ba';
     const progressAnimation = useRef(new Animated.Value(0)).current;
@@ -30,13 +30,12 @@ const NextButton = ({ percentage, scrollTo }) => {
             (animationValue) => {
                 const strokeDashoffset =
                     circumference -
-                    (circumference * animationValue.value) / 64 / 100;
+                    (circumference * animationValue.value) / 100;
                 if (progressRef?.current) {
                     progressRef.current.setNativeProps({
                         strokeDashoffset,
                     });
                 }
-                console.log(strokeDashoffset);
             },
             [percentage],
         );
