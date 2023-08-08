@@ -10,11 +10,9 @@ const NextButton = ({ percentage, scrollTo }) => {
     const radius = size / 2 - strokeWidth / 2;
     const circumference = size * Math.PI * radius;
     const colorWhite = '#E6E7E8';
-    const colorPink = '#F4338F';
-
+    const colorPink = '#5e02ba';
     const progressAnimation = useRef(new Animated.Value(0)).current;
     const progressRef = useRef(null);
-
     const animation = (toValue) => {
         return Animated.timing(progressAnimation, {
             toValue,
@@ -38,6 +36,7 @@ const NextButton = ({ percentage, scrollTo }) => {
                         strokeDashoffset,
                     });
                 }
+                console.log(strokeDashoffset);
             },
             [percentage],
         );
@@ -45,10 +44,9 @@ const NextButton = ({ percentage, scrollTo }) => {
             progressAnimation.removeAllListeners();
         };
     }, []);
-
     return (
         <View style={styles.container}>
-            <Svg width={size} height={size}>
+            <Svg width={size} height={size} fill="#cdb6d1">
                 <G rotation="-90" origin={center}>
                     <Circle
                         stroke={colorWhite}
