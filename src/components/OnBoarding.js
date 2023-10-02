@@ -28,10 +28,10 @@ const OnBoarding = () => {
         <View style={styles.container}>
             <View style={{ flex: 3 }}>
                 <FlatList
+                    showsHorizontalScrollIndicator={false}
                     data={slides}
                     renderItem={({ item }) => <Onboardingitem item={item} />}
                     horizontal
-                    showsHorizontalScrollIndicator
                     pagingEnabled
                     bounces={false}
                     keyExtractor={(item) => item.id}
